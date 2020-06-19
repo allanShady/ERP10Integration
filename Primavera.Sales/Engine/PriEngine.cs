@@ -28,7 +28,7 @@ namespace Primavera.Sales
             ErpBS MotorLE = new ErpBS();
 
             EnumTipoPlataforma objTipoPlataforma;
-            objTipoPlataforma = EnumTipoPlataforma.tpEmpresarial;
+            objTipoPlataforma = EnumTipoPlataforma.tpProfissional;
 
             objAplConf.Instancia = "Default";
             objAplConf.AbvtApl = "ERP";
