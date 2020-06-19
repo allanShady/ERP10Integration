@@ -84,7 +84,7 @@ namespace Primavera.Sales.Invoice
 
             try
             {
-                if (checkBox1.Checked)
+                if (checkBox1.Checked || true)
                 {
                     // Set all the entity related information.
                     PriEngine.Engine.Vendas.Documentos.PreencheDadosRelacionados(invoice);
@@ -124,7 +124,7 @@ namespace Primavera.Sales.Invoice
                 PriEngine.Engine.Vendas.Documentos.Actualiza(invoice, ref avisos);
 
                 // Accountig
-                PriEngine.Engine.Base.LigacaoCBL.IntegraDocumentoLogCBL("V", invoice.Tipodoc, invoice.Serie, invoice.NumDoc, invoice.Filial, 1, ref avisos, true);
+                //PriEngine.Engine.Base.LigacaoCBL.IntegraDocumentoLogCBL("V", invoice.Tipodoc, invoice.Serie, invoice.NumDoc, invoice.Filial, 1, ref avisos, true);
 
                 // Show warning any message.
                 if (avisos.Length > 0) MessageBox.Show(avisos.ToString());
